@@ -130,6 +130,32 @@ export default {
 					'100%': {
 						transform: 'rotate(0deg)'
 					}
+				},
+				'flow': {
+					'0%': {
+						strokeDashoffset: '0',
+						opacity: '0.3'
+					},
+					'50%': {
+						opacity: '0.5'
+					},
+					'100%': {
+						strokeDashoffset: '-100',
+						opacity: '0.3'
+					}
+				},
+				'flow-delayed': {
+					'0%': {
+						strokeDashoffset: '50',
+						opacity: '0.2'
+					},
+					'50%': {
+						opacity: '0.4'
+					},
+					'100%': {
+						strokeDashoffset: '-50',
+						opacity: '0.2'
+					}
 				}
 			},
 			animation: {
@@ -139,7 +165,9 @@ export default {
 				'float-delayed': 'float-delayed 8s ease-in-out infinite',
 				'float-slow': 'float-slow 12s ease-in-out infinite',
 				'spin-slow': 'spin-slow 20s linear infinite',
-				'spin-slow-reverse': 'spin-slow-reverse 25s linear infinite'
+				'spin-slow-reverse': 'spin-slow-reverse 25s linear infinite',
+				'flow': 'flow 8s ease-in-out infinite',
+				'flow-delayed': 'flow-delayed 12s ease-in-out infinite'
 			}
 		}
 	},
