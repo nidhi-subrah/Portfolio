@@ -12,18 +12,10 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center px-8 relative overflow-hidden">
-      {/* Enhanced abstract background for Hero */}
+      {/* Clean gradient background for Hero */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Subtle gradient overlay for depth */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/12 via-transparent to-purple-900/12"></div>
-        
-        {/* Hero-specific floating elements */}
-        <div className="absolute top-1/4 right-1/4 w-48 h-48 bg-gradient-to-br from-purple-500/6 to-transparent rounded-full blur-2xl animate-float-delayed"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-32 h-32 bg-gradient-to-br from-blue-500/5 to-transparent rounded-full blur-xl animate-float"></div>
-        
-        {/* Subtle geometric accents for Hero */}
-        <div className="absolute top-1/3 left-1/3 w-16 h-16 bg-gradient-to-br from-cyan-400/4 to-transparent rotate-30 animate-pulse delay-500"></div>
-        <div className="absolute bottom-1/3 right-1/3 w-12 h-12 bg-gradient-to-br from-purple-400/4 to-transparent -rotate-30 animate-pulse delay-1000"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-transparent to-purple-900/10"></div>
       </div>
 
       {/* Logo in top left with animation */}

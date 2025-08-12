@@ -22,18 +22,10 @@ const Summary = () => {
 
   return (
     <section id="summary" className="min-h-screen px-8 py-16 relative">
-      {/* Enhanced abstract background for Summary */}
+      {/* Clean gradient background for Summary */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Subtle gradient overlay for depth */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-transparent to-purple-900/10"></div>
-        
-        {/* Summary-specific floating elements */}
-        <div className="absolute top-1/3 left-1/4 w-56 h-56 bg-gradient-to-br from-purple-500/5 to-transparent rounded-full blur-2xl animate-float-slow"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-40 h-40 bg-gradient-to-br from-blue-500/4 to-transparent rounded-full blur-xl animate-float-delayed"></div>
-        
-        {/* Subtle geometric accents for Summary */}
-        <div className="absolute top-1/2 left-1/2 w-20 h-20 bg-gradient-to-br from-cyan-400/3 to-transparent rotate-45 animate-pulse delay-750"></div>
-        <div className="absolute bottom-1/2 right-1/2 w-16 h-16 bg-gradient-to-br from-purple-400/3 to-transparent -rotate-45 animate-pulse delay-1250"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/8 via-transparent to-purple-900/8"></div>
       </div>
       
       <div className="max-w-6xl mx-auto relative z-10">
