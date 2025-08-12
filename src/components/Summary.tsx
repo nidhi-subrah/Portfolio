@@ -21,8 +21,15 @@ const Summary = () => {
   }, []);
 
   return (
-    <section id="summary" className="min-h-screen px-8 py-16">
-      <div className="max-w-6xl mx-auto">
+    <section id="summary" className="min-h-screen px-8 py-16 relative">
+      {/* Subtle background enhancements for this section */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-blue-500/5 to-transparent rounded-full blur-3xl animate-float-slow"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-gradient-to-br from-purple-500/5 to-transparent rounded-full blur-2xl animate-float-delayed"></div>
+        <div className="absolute top-1/2 right-1/3 w-32 h-32 bg-gradient-to-br from-cyan-500/3 to-transparent rounded-full blur-xl animate-float"></div>
+      </div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Seeking Internships Card */}
           <div className={`bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 hover:border-blue-500/50 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/10 ${

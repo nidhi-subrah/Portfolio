@@ -12,10 +12,25 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center px-8 relative overflow-hidden">
-      {/* Animated background elements */}
+      {/* Enhanced animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        {/* Main floating orbs */}
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-500/15 to-pink-500/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-blue-500/15 to-cyan-500/10 rounded-full blur-3xl animate-float-delayed"></div>
+        
+        {/* Additional smaller elements */}
+        <div className="absolute top-1/4 right-1/4 w-32 h-32 bg-gradient-to-br from-purple-400/10 to-transparent rounded-full blur-2xl animate-float-slow"></div>
+        <div className="absolute bottom-1/3 right-1/3 w-24 h-24 bg-gradient-to-br from-blue-400/10 to-transparent rounded-full blur-xl animate-float"></div>
+        
+        {/* Subtle geometric accents */}
+        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-purple-500/5 to-transparent rotate-45 animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-12 h-12 bg-gradient-to-br from-blue-500/5 to-transparent -rotate-45 animate-pulse delay-1000"></div>
+        
+        {/* Moving light trails */}
+        <div className="absolute top-0 left-0 w-full h-full">
+          <div className="absolute top-20 left-20 w-1 h-32 bg-gradient-to-b from-purple-500/20 to-transparent animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-1 h-32 bg-gradient-to-b from-blue-500/20 to-transparent animate-pulse delay-500"></div>
+        </div>
       </div>
 
       {/* Logo in top left with animation */}
