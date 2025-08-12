@@ -12,69 +12,10 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center px-8 relative overflow-hidden">
-      {/* Enhanced animated background elements */}
+      {/* Clean background for neural network overlay */}
       <div className="absolute inset-0 overflow-hidden">
-        {/* Main floating orbs */}
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-500/15 to-pink-500/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-blue-500/15 to-cyan-500/10 rounded-full blur-3xl animate-float-delayed"></div>
-        
-        {/* Additional smaller elements */}
-        <div className="absolute top-1/4 right-1/4 w-32 h-32 bg-gradient-to-br from-purple-400/10 to-transparent rounded-full blur-2xl animate-float-slow"></div>
-        <div className="absolute bottom-1/3 right-1/3 w-24 h-24 bg-gradient-to-br from-blue-400/10 to-transparent rounded-full blur-xl animate-float"></div>
-        
-        {/* Subtle geometric accents */}
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-purple-500/5 to-transparent rotate-45 animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-12 h-12 bg-gradient-to-br from-blue-500/5 to-transparent -rotate-45 animate-pulse delay-1000"></div>
-        
-        {/* Moving light trails */}
-        <div className="absolute top-0 left-0 w-full h-full">
-          <div className="absolute top-20 left-20 w-1 h-32 bg-gradient-to-b from-purple-500/20 to-transparent animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-1 h-32 bg-gradient-to-b from-blue-500/20 to-transparent animate-pulse delay-500"></div>
-        </div>
-        
-        {/* Abstract network elements for Hero */}
-        <div className="absolute inset-0 opacity-6">
-          <svg className="w-full h-full" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <filter id="heroGlow">
-                <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
-                <feMerge> 
-                  <feMergeNode in="coloredBlur"/>
-                  <feMergeNode in="SourceGraphic"/>
-                </feMerge>
-              </filter>
-            </defs>
-            
-            {/* Hero-specific flowing lines */}
-            <path 
-              d="M 50,100 Q 200,50 350,100 T 650,100 M 100,200 Q 250,150 400,200 T 600,200 M 150,300 Q 300,250 450,300 T 550,300 M 200,400 Q 350,350 500,400 T 500,400"
-              stroke="url(#heroBlueGradient)" 
-              strokeWidth="0.3" 
-              fill="none" 
-              opacity="0.25"
-              filter="url(#heroGlow)"
-              className="animate-flow"
-            />
-            
-            {/* Hero dots */}
-            <circle cx="350" cy="100" r="0.8" fill="url(#heroBlueGradient)" opacity="0.3" className="animate-pulse"/>
-            <circle cx="400" cy="200" r="0.6" fill="url(#heroPurpleGradient)" opacity="0.2" className="animate-pulse delay-300"/>
-            <circle cx="450" cy="300" r="0.9" fill="url(#heroBlueGradient)" opacity="0.25" className="animate-pulse delay-600"/>
-            <circle cx="500" cy="400" r="0.7" fill="url(#heroPurpleGradient)" opacity="0.15" className="animate-pulse delay-900"/>
-            
-            {/* Gradients */}
-            <defs>
-              <linearGradient id="heroBlueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" style={{stopColor: 'rgba(59, 130, 246, 0.4)', stopOpacity: 1}} />
-                <stop offset="100%" style={{stopColor: 'rgba(147, 51, 234, 0.4)', stopOpacity: 1}} />
-              </linearGradient>
-              <linearGradient id="heroPurpleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" style={{stopColor: 'rgba(147, 51, 234, 0.4)', stopOpacity: 1}} />
-                <stop offset="100%" style={{stopColor: 'rgba(59, 130, 246, 0.4)', stopOpacity: 1}} />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
+        {/* Subtle gradient overlay for depth */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-transparent to-purple-900/10"></div>
       </div>
 
       {/* Logo in top left with animation */}

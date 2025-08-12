@@ -22,11 +22,10 @@ const Summary = () => {
 
   return (
     <section id="summary" className="min-h-screen px-8 py-16 relative">
-      {/* Subtle background enhancements for this section */}
+      {/* Clean background for neural network overlay */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-blue-500/5 to-transparent rounded-full blur-3xl animate-float-slow"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-gradient-to-br from-purple-500/5 to-transparent rounded-full blur-2xl animate-float-delayed"></div>
-        <div className="absolute top-1/2 right-1/3 w-32 h-32 bg-gradient-to-br from-cyan-500/3 to-transparent rounded-full blur-xl animate-float"></div>
+        {/* Subtle gradient overlay for depth */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/8 via-transparent to-purple-900/8"></div>
       </div>
       
       <div className="max-w-6xl mx-auto relative z-10">

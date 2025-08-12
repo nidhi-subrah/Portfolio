@@ -85,89 +85,28 @@ export default {
 						height: '0'
 					}
 				},
-				'float': {
+				'neural-pulse': {
 					'0%, 100%': {
-						transform: 'translateY(0px) translateX(0px)'
-					},
-					'33%': {
-						transform: 'translateY(-20px) translateX(10px)'
-					},
-					'66%': {
-						transform: 'translateY(-10px) translateX(-5px)'
-					}
-				},
-				'float-delayed': {
-					'0%, 100%': {
-						transform: 'translateY(0px) translateX(0px)'
-					},
-					'33%': {
-						transform: 'translateY(-15px) translateX(-8px)'
-					},
-					'66%': {
-						transform: 'translateY(-25px) translateX(5px)'
-					}
-				},
-				'float-slow': {
-					'0%, 100%': {
-						transform: 'translateY(0px) translateX(0px)'
+						opacity: '0.4'
 					},
 					'50%': {
-						transform: 'translateY(-30px) translateX(15px)'
+						opacity: '0.7'
 					}
 				},
-				'spin-slow': {
-					'0%': {
-						transform: 'rotate(0deg)'
-					},
-					'100%': {
-						transform: 'rotate(360deg)'
-					}
-				},
-				'spin-slow-reverse': {
-					'0%': {
-						transform: 'rotate(360deg)'
-					},
-					'100%': {
-						transform: 'rotate(0deg)'
-					}
-				},
-				'flow': {
-					'0%': {
-						strokeDashoffset: '0',
+				'neural-fade': {
+					'0%, 100%': {
 						opacity: '0.3'
 					},
 					'50%': {
 						opacity: '0.5'
-					},
-					'100%': {
-						strokeDashoffset: '-100',
-						opacity: '0.3'
-					}
-				},
-				'flow-delayed': {
-					'0%': {
-						strokeDashoffset: '50',
-						opacity: '0.2'
-					},
-					'50%': {
-						opacity: '0.4'
-					},
-					'100%': {
-						strokeDashoffset: '-50',
-						opacity: '0.2'
 					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'float': 'float 6s ease-in-out infinite',
-				'float-delayed': 'float-delayed 8s ease-in-out infinite',
-				'float-slow': 'float-slow 12s ease-in-out infinite',
-				'spin-slow': 'spin-slow 20s linear infinite',
-				'spin-slow-reverse': 'spin-slow-reverse 25s linear infinite',
-				'flow': 'flow 8s ease-in-out infinite',
-				'flow-delayed': 'flow-delayed 12s ease-in-out infinite'
+				'neural-pulse': 'neural-pulse 3s ease-in-out infinite',
+				'neural-fade': 'neural-fade 4s ease-in-out infinite'
 			}
 		}
 	},
