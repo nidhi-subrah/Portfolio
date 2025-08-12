@@ -16,7 +16,9 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-blue-900/15 via-transparent to-purple-900/15"></div>
         
         {/* Neural Network Background */}
-        <NeuralNetwork />
+        <div className="opacity-20">
+          <NeuralNetwork />
+        </div>
         
         {/* Subtle noise texture */}
         <div className="absolute inset-0 opacity-5">
