@@ -23,7 +23,7 @@ const Hero = () => {
         <div className={`text-white text-2xl font-bold transition-all duration-1000 transform ${
           isVisible ? "translate-y-0 opacity-100" : "-translate-y-4 opacity-0"
         }`}>
-          NS
+          <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">NS</span>
         </div>
       </div>
 
@@ -32,7 +32,7 @@ const Hero = () => {
         <div className={`mb-6 transition-all duration-1000 transform delay-200 ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
         }`}>
-          <p className="text-gray-300 text-lg font-medium animate-bounce">
+          <p className="text-gray-300 text-lg font-medium">
             👋 Hey! I'm
           </p>
         </div>
