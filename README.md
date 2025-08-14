@@ -1,42 +1,71 @@
-# Portfolio
+# Glow Portfolio Hero
 
-A modern personal tech portfolio built with React, TypeScript, and Tailwind CSS.
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS.
+
+## Features
+
+- 🎨 Modern UI with beautiful animations
+- 📱 Fully responsive design
+- ⚡ Built with Vite for fast development
+- 🎯 TypeScript for type safety
+- 🎨 Tailwind CSS for styling
+- 🔧 Shadcn/ui components
 
 ## Getting Started
 
-First, install dependencies:
+### Prerequisites
 
-```bash
-npm install
-```
+- Node.js (version 18 or higher)
+- npm, yarn, or pnpm
 
-Then, run the development server:
+### Installation
 
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Development
+
+Start the development server:
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:8080](http://localhost:8080) with your browser to see the result.
+The app will be available at `http://localhost:8080`
 
-## Features
+### Build
 
-- Modern React with TypeScript
-- Tailwind CSS for styling
-- Responsive design
-- Component-based architecture
-
-## Build
-
-To build for production:
-
+Build for production:
 ```bash
 npm run build
 ```
 
-## Preview
-
-To preview the production build:
-
+Preview the production build:
 ```bash
 npm run preview
 ```
+
+## Tech Stack
+
+- **Frontend**: React 18, TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: Shadcn/ui
+- **Icons**: Lucide React
+
+## Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── pages/         # Page components
+├── hooks/         # Custom React hooks
+├── lib/           # Utility functions
+└── main.tsx       # Application entry point
+```
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).

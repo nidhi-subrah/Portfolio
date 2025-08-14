@@ -21,14 +21,8 @@ const Summary = () => {
   }, []);
 
   return (
-    <section id="summary" className="min-h-screen px-8 py-16 relative">
-      {/* Clean gradient background for Summary */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Subtle gradient overlay for depth */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/8 via-transparent to-purple-900/8"></div>
-      </div>
-      
-      <div className="max-w-6xl mx-auto relative z-10">
+    <section id="summary" className="min-h-screen px-8 py-16">
+      <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Seeking Internships Card */}
           <div className={`bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 hover:border-blue-500/50 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/10 ${
