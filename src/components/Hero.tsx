@@ -18,15 +18,6 @@ const Hero = () => {
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[#007bff]/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      {/* Logo in top left with animation - keeping your existing animation */}
-      <div className="fixed top-8 left-8 z-50">
-        <div className={`text-white text-2xl font-bold transition-all duration-1000 transform ${
-          isVisible ? "translate-y-0 opacity-100" : "-translate-y-4 opacity-0"
-        }`}>
-          <span className="text-gradient">NS</span>
-        </div>
-      </div>
-
       <div className="text-center max-w-4xl relative z-10">
         {/* Greeting with staggered animation */}
         <div className={`mb-6 transition-all duration-1000 transform delay-200 ${
