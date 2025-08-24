@@ -1,86 +1,91 @@
+import { useState, useEffect } from 'react';
+import { Button } from '@/components/ui/button';
 
-import { useState, useEffect } from "react";
+const navItems = [
+  { name: 'Home', href: '#hero' },
+  { name: 'About', href: '#about' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Contact', href: '#contact' }
+];
 
-const Navigation = () => {
-  const [activeSection, setActiveSection] = useState("summary");
+export const Navigation = () => {
+  const [activeSection, setActiveSection] = useState('about');
   const [isScrolled, setIsScrolled] = useState(false);
-
-  const navItems = [
-    { id: "about", label: "About" },
-    { id: "summary", label: "Summary" },
-    { id: "experience", label: "Experience" },
-    { id: "projects", label: "Projects" },
-    { id: "contact", label: "Contact" },
-  ];
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
       
       // Update active section based on scroll position
-      const sections = navItems.map(item => document.getElementById(item.id));
-      const scrollPosition = window.scrollY + 100;
-
-      sections.forEach((section, index) => {
-        if (section) {
-          const { offsetTop, offsetHeight } = section;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(navItems[index].id);
-          }
+      const sections = navItems.map(item => item.href.substring(1));
+      const current = sections.find(section => {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          return rect.top <= 100 && rect.bottom >= 100;
         }
+        return false;
       });
+      
+      if (current) {
+        setActiveSection(current);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setActiveSection(sectionId);
+  const scrollToSection = (href: string) => {
+    if (href === '#hero') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 px-8 py-6 transition-all duration-300 ${
-      isScrolled ? 'backdrop-blur-md bg-[#1A1A1A]/80 border-b border-[#333333]' : ''
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-background/80 backdrop-blur-md border-b border-border' : 'bg-transparent'
     }`}>
-      <div className="max-w-6xl mx-auto flex justify-between items-center">
-        {/* Logo/Initials */}
-        <div className="text-white text-2xl font-bold">
-          <span className="text-gradient">NS</span>
-        </div>
-        
-        {/* Navigation Items */}
-        <div className="flex space-x-8">
-          {navItems.map((item, index) => (
-            <button
-              key={item.id}
-              onClick={() => scrollToSection(item.id)}
-              className={`text-sm font-medium transition-all duration-300 transform hover:scale-110 relative group ${
-                activeSection === item.id 
-                  ? "text-[#00C0C0]" 
-                  : "text-[#E0E0E0] hover:text-white"
-              }`}
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              {item.label}
-              
-              {/* Active indicator */}
-              <div className={`absolute -bottom-2 left-0 w-full h-0.5 bg-[#00C0C0] transform transition-all duration-300 ${
-                activeSection === item.id ? 'scale-x-100' : 'scale-x-0'
-              }`}></div>
-              
-              {/* Hover effect */}
-              <div className="absolute -bottom-2 left-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-            </button>
-          ))}
+      <div className="max-w-7xl mx-auto px-6 py-4">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <div className="text-lg font-signature text-white handwritten-signature opacity-90">
+            NS
+          </div>
+
+          {/* Navigation Items */}
+          <div className="hidden md:flex items-center space-x-8">
+            {navItems.map((item, index) => (
+              <button
+                key={item.name}
+                onClick={() => scrollToSection(item.href)}
+                className={`text-sm font-medium transition-all duration-300 hover:text-primary relative
+                  ${activeSection === item.href.substring(1) ? 'text-primary' : 'text-muted-foreground'}
+                  ${activeSection === item.href.substring(1) ? 'after:w-full' : 'after:w-0'}
+                  after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:h-0.5 
+                  after:bg-primary after:transition-all after:duration-300
+                `}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                {item.name}
+              </button>
+            ))}
+          </div>
+
+          {/* Mobile Menu Button */}
+          <Button variant="ghost" size="icon" className="md:hidden">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </Button>
         </div>
       </div>
     </nav>
   );
 };
-
-export default Navigation;
