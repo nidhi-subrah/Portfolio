@@ -92,23 +92,18 @@ export const Hero = () => {
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-
-<div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+      <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
         {/* Greeting */}
         <div className="mb-8 animate-fade-in">
           <span className="inline-flex items-center gap-2 text-lg text-muted-foreground">
-
             👋 Hey! I'm
           </span>
         </div>
-
-        {/* Name */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in" 
+        {/* Name (always visible, with animation if possible) */}
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in"
             style={{ animationDelay: '0.2s' }}>
           <span className="gradient-text cursor-default relative">
-            <AnimatedText text="Nidhi" delay={startAnimation ? 200 : 0} />
-            <span className="inline-block w-4"></span>
-            <AnimatedText text="Subrahmanya" delay={startAnimation ? 400 : 0} />
+            Nidhi Subrahmanya
           </span>
         </h1>
 
