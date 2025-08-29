@@ -102,8 +102,9 @@ export const Hero = () => {
         {/* Name (always visible, with animation if possible) */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in"
             style={{ animationDelay: '0.2s' }}>
-          <span className="gradient-text cursor-default relative">
+          <span className="gradient-text cursor-default" style={{ position: 'relative', display: 'inline-block' }}>
             Nidhi Subrahmanya
+            <span className="shine" aria-hidden="true"></span>
           </span>
         </h1>
 

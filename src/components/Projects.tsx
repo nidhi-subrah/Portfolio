@@ -48,8 +48,12 @@ export const Projects = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16 reveal-item">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text hover-glow cursor-default">
+          <h2
+            className="text-4xl md:text-5xl font-bold mb-4 gradient-text cursor-default"
+            style={{ position: 'relative', display: 'inline-block', lineHeight: 1.25, paddingBottom: '0.2em' }}
+          >
             Featured Projects
+            <span className="shine" aria-hidden="true"></span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-reveal">
             A showcase of my recent work and technical capabilities

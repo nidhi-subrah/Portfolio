@@ -102,8 +102,9 @@ export const StartupAnimation = () => {
             <div className={`text-3xl font-bold mt-12 transition-all duration-500 ${
               stage >= 2 ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
             }`}>
-              <span className="gradient-text animate-pulse relative">
+              <span className="gradient-text relative" style={{ position: 'relative', display: 'inline-block' }}>
                 ◉ SYSTEM READY ◉
+                <span className="shine" aria-hidden="true"></span>
                 <div className="absolute inset-0 animate-ping opacity-25">◉ SYSTEM READY ◉</div>
               </span>
             </div>
