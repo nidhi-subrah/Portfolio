@@ -79,16 +79,6 @@ const AnimatedText = ({ text, delay = 0 }: { text: string; delay?: number }) => 
 };
 
 export const Hero = () => {
-  const [startAnimation, setStartAnimation] = useState(false);
-
-  useEffect(() => {
-    // Start name animation after a brief delay
-    const timer = setTimeout(() => {
-      setStartAnimation(true);
-    }, 500);
-    
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -102,7 +92,7 @@ export const Hero = () => {
         {/* Name (always visible, with animation if possible) */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in"
             style={{ animationDelay: '0.2s' }}>
-          <span className="gradient-text cursor-default" style={{ position: 'relative', display: 'inline-block' }}>
+          <span className="hero-shine gradient-text cursor-default" style={{ position: 'relative', display: 'inline-block' }}>
             Nidhi Subrahmanya
             <span className="shine" aria-hidden="true"></span>
           </span>

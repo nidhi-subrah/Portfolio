@@ -24,8 +24,20 @@ export const StartupAnimation = () => {
     };
   }, []);
 
-  if (!isVisible) return null;
+  if (!isVisible) {
+    // Remove any overlay or pointer-events block
+    if (typeof document !== 'undefined') {
+      const root = document.getElementById('root');
+      if (root) root.style.pointerEvents = 'auto';
+    }
+    return null;
+  }
 
+  // Block pointer events only while visible
+  if (typeof document !== 'undefined') {
+    const root = document.getElementById('root');
+    if (root) root.style.pointerEvents = isVisible ? 'none' : 'auto';
+  }
   return (
     <div className={`fixed inset-0 z-50 bg-background transition-all duration-3000 ease-out ${
       isTransitioning ? 'opacity-0 scale-101' : 'opacity-100 scale-100'
@@ -104,7 +116,6 @@ export const StartupAnimation = () => {
             }`}>
               <span className="gradient-text relative" style={{ position: 'relative', display: 'inline-block' }}>
                 ◉ SYSTEM READY ◉
-                <span className="shine" aria-hidden="true"></span>
                 <div className="absolute inset-0 animate-ping opacity-25">◉ SYSTEM READY ◉</div>
               </span>
             </div>

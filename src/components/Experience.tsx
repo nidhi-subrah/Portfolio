@@ -39,9 +39,8 @@ export const Experience = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16 reveal-item">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text cursor-default" style={{ position: 'relative', display: 'inline-block' }}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary cursor-default" style={{ position: 'relative', display: 'inline-block' }}>
             Work Experience
-            <span className="shine" aria-hidden="true"></span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-reveal">
             My professional journey and key contributions
