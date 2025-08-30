@@ -3,14 +3,14 @@ import { Button } from '@/components/ui/button';
 
 const navItems = [
   { name: 'Home', href: '#hero' },
-  { name: 'About', href: '#about' },
+  { name: 'About Me', href: '#about-details' },
   { name: 'Experience', href: '#experience' },
   { name: 'Projects', href: '#projects' },
   { name: 'Contact', href: '#contact' }
 ];
 
 export const Navigation = () => {
-  const [activeSection, setActiveSection] = useState('about');
+  const [activeSection, setActiveSection] = useState('about-details');
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
