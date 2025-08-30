@@ -49,7 +49,7 @@ export const Projects = () => {
         {/* Section Header */}
         <div className="text-center mb-16 reveal-item">
           <h2
-            className="text-4xl md:text-5xl font-bold mb-4 text-primary cursor-default"
+            className="text-4xl md:text-5xl font-bold mb-4 section-gradient cursor-default"
             style={{ position: 'relative', display: 'inline-block' }}
           >
             Featured Projects

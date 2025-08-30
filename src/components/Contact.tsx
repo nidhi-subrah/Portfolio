@@ -8,7 +8,7 @@ export const Contact = () => {
       <div className="max-w-4xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary cursor-default" style={{ position: 'relative', display: 'inline-block' }}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 section-gradient cursor-default" style={{ position: 'relative', display: 'inline-block' }}>
             Let's Connect
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
