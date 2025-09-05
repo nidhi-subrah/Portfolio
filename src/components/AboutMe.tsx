@@ -43,8 +43,8 @@ const AboutMe = () => {
           <div className="relative">
             <div className="absolute -inset-2 bg-gradient-to-tr from-purple-600/30 via-blue-500/20 to-transparent blur-2xl rounded-3xl" />
             <img
-              src="/placeholder.svg"
-              alt="Portrait"
+              src="/images/Personal Pic.jpg"
+              alt="Nidhi Subrahmanya"
               className="relative rounded-2xl border border-gray-700 shadow-2xl object-cover w-[300px] h-[380px] md:w-[380px] md:h-[500px]"
             />
           </div>

@@ -5,37 +5,30 @@ import { Calendar, MapPin } from 'lucide-react';
 
 const experiences = [
   {
-    title: 'Software Engineering Intern',
-    company: 'Tech Innovators Inc.',
-    location: 'Toronto, ON',
-    period: 'May 2024 - Present',
-    description: 'Developing scalable web applications using React and Node.js. Collaborated with cross-functional teams to deliver high-impact features for 10,000+ users.',
-    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'AWS'],
-    current: true
-  },
-  {
-    title: 'Full Stack Developer',
-    company: 'StartupXYZ',
-    location: 'Remote',
-    period: 'Sep 2023 - Apr 2024',
-    description: 'Built and maintained web applications from conception to deployment. Implemented CI/CD pipelines and improved application performance by 40%.',
-    technologies: ['Vue.js', 'Python', 'Django', 'Docker', 'MongoDB'],
+    title: 'AI & Data Analyst',
+    company: 'Gay Lea',
+    location: 'Mississauga, ON',
+    period: 'May 2025 - Aug 2025',
+    description: <p>
+-Automated pricing approval workflows with Power Automate, cutting manual validation by 60% and reducing turnaround time from days to hours.<br/>
+-Built a Microsoft Fabric AI Agent with natural language querying and fuzzy matching, improving data access for 100+ employees.<br/>
+-Designed and deployed a Power App integrated with Dataverse for real-time shortage tracking, reducing monthly supply chain disruptions.</p>,
+    technologies: ['Power Automate', 'Microsoft Fabric', 'Power BI', 'Dataverse', 'Power Apps'],
     current: false
   },
   {
-    title: 'Research Assistant',
-    company: 'University of Waterloo',
+    title: 'Web Developer',
+    company: 'Electrium Mobility',
     location: 'Waterloo, ON',
-    period: 'Jan 2023 - Aug 2023',
-    description: 'Conducted research on machine learning algorithms for natural language processing. Published findings in academic conference.',
-    technologies: ['Python', 'TensorFlow', 'PyTorch', 'Jupyter', 'LaTeX'],
+    period: 'Jan 2025 - Apr 2025',
+    description: <p>-Contributed to frontend development of the Electrium Mobility Shop with React, TypeScript, and Next.js, focusing on UI improvements and debugging.<br/>-Maintained a Supabase (PostgreSQL) backend, enhancing performance and implementing a product rating system.</p>,
+    technologies: ['React.js', 'PostgreSQL', 'Supabase', 'Next.js'],
     current: false
   }
 ];
-
 export const Experience = () => {
   return (
-    <section id="experience" className="py-24 relative">
+    <section id="experience" className="py-24 relative transition-opacity duration-500">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16 reveal-item">

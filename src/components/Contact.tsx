@@ -12,7 +12,7 @@ export const Contact = () => {
             Let's Connect
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Always excited to discuss new opportunities and interesting projects
+            Always excited to discuss new opportunities and interesting projects!
           </p>
         </div>
 
@@ -28,7 +28,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <div className="font-medium">Email</div>
-                  <div className="text-muted-foreground">nidhi@example.com</div>
+                  <div className="text-muted-foreground">n2subrah@uwaterloo.ca</div>
                 </div>
               </div>
 
@@ -38,17 +38,27 @@ export const Contact = () => {
                 </div>
                 <div>
                   <div className="font-medium">Location</div>
-                  <div className="text-muted-foreground">Waterloo, Ontario</div>
+                  <div className="text-muted-foreground">Toronto, Ontario</div>
                 </div>
               </div>
 
               <div className="pt-6">
                 <div className="flex gap-4">
-                  <Button variant="tech" size="sm" className="group">
+                  <Button 
+                    variant="tech" 
+                    size="sm" 
+                    className="group"
+                    onClick={() => window.open('https://www.linkedin.com/in/nidhi-subrahmanya/', '_blank')}
+                  >
                     <Linkedin className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                     LinkedIn
                   </Button>
-                  <Button variant="outline" size="sm" className="group">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="group"
+                    onClick={() => window.open('https://github.com/nidhi-subrah', '_blank')}
+                  >
                     <Github className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                     GitHub
                   </Button>
@@ -58,11 +68,11 @@ export const Contact = () => {
           </Card>
 
           {/* Quick Message */}
-          <Card className="p-8 tech-border hover:shadow-tech transition-all duration-300 bg-card/50 backdrop-blur-sm">
+          <Card className="p-8 tech-border hover:shadow-tech transition-all duration-300 bg-card/50 backdrop-blur-sm group">
             <h3 className="text-2xl font-semibold mb-6 text-primary">Quick Message</h3>
             
             <div className="space-y-4">
-              <div className="text-muted-foreground leading-relaxed">
+              <div className="text-muted-foreground group-hover:text-foreground leading-relaxed transition-colors duration-300">
                 <p className="mb-4">
                   I'm always open to discussing new opportunities, collaborating on 
                   interesting projects, or just having a chat about technology and innovation.
@@ -73,13 +83,28 @@ export const Contact = () => {
                 </p>
               </div>
 
-              <Button variant="tech" size="lg" className="w-full group">
-                <Mail className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-                Send Email
+              <Button 
+                variant="glow" 
+                size="lg" 
+                className="w-full group bg-transparent border-2 border-transparent text-foreground relative overflow-hidden hover:shadow-glow transition-all duration-300"
+                onClick={() => {
+                  const email = 'n2subrah@uwaterloo.ca';
+                  const subject = 'Hello from your portfolio!';
+                  const body = 'Hi Nidhi,\n\nI came across your portfolio and would like to connect...';
+                  const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                  window.location.href = mailtoLink;
+                }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary opacity-100 p-[2px] rounded-md">
+                  <div className="bg-background rounded-md w-full h-full"></div>
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                <Mail className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform relative z-10" />
+                <span className="relative z-10">Send Email</span>
               </Button>
 
               <div className="text-center text-sm text-muted-foreground">
-                Usually responds within 24 hours
+                Responds within 24 hours
               </div>
             </div>
           </Card>
@@ -88,7 +113,7 @@ export const Contact = () => {
         {/* Footer */}
         <div className="text-center mt-16 pt-8 border-t border-border">
           <p className="text-muted-foreground">
-            © 2024 Nidhi Subrahmanya. Built with ❤️ using React & TypeScript
+            © 2025 Nidhi Subrahmanya. Built with &hearts; using React & TypeScript
           </p>
         </div>
       </div>

@@ -79,7 +79,7 @@ export const Navigation = () => {
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
                   className={`text-sm font-medium transition-all duration-300 hover:text-primary relative
-                    ${activeSection === item.href.substring(1) ? 'text-primary' : 'text-muted-foreground'}
+                    ${activeSection === item.href.substring(1) ? 'text-primary' : 'text-white'}
                     ${activeSection === item.href.substring(1) ? 'after:w-full' : 'after:w-0'}
                     after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:h-0.5 
                     after:bg-primary after:transition-all after:duration-300
