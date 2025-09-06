@@ -28,6 +28,12 @@ export default defineConfig(({ mode }) => ({
     },
     sourcemap: false,
     minify: 'esbuild',
+    target: 'es2020',
+    outDir: 'dist',
+    assetsDir: 'assets',
   },
   base: '/',
+  define: {
+    global: 'globalThis',
+  },
 }));
