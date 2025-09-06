@@ -1,73 +1,48 @@
-# Welcome to your project
+# 🌐 Nidhi’s Personal Portfolio  
 
-## Project info
+A modern personal portfolio built with **React, TypeScript, and Vite**, designed to showcase my projects, experience, and skills. The site emphasizes speed, accessibility, and clean design, powered by a cutting-edge frontend tech stack.  
 
-**URL**: 
+🔗 **Live Demo:** [nidhisportfolio-chi.vercel.app](https://nidhisportfolio-chi.vercel.app)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Features  
 
-**Usage**
+- **Responsive Design** – Optimized for desktop and mobile devices  
+- **Fast & Lightweight** – Powered by Vite + SWC for instant builds and blazing runtime performance  
+- **Modern UI/UX** – Styled with Tailwind CSS and enhanced with `shadcn/ui` and Radix primitives  
+- **Dynamic Theming** – Custom CSS variables with animations and smooth transitions  
+- **Robust Forms** – Built with React Hook Form + Zod validation for reliability and type-safety  
+- **Clean Navigation** – Custom responsive navigation bar with mobile menu  
+- **Accessible Components** – Fully keyboard-navigable, screen-reader-friendly design  
 
-Simply visit the project and start prompting.
+---
 
-Changes made via the tool will be committed automatically to this repo.
+## 🛠️ Core Tech Stack  
 
-**Use your preferred IDE**
+### Frontend Framework & Build Tools  
+- **React 18.3.1** – Hooks, functional components, modern patterns  
+- **TypeScript 5.8.3** – Full type safety  
+- **Vite 5.4.19** – Lightning-fast dev server and build tool  
+- **SWC** – Ultra-fast JS/TS compiler  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. 
+### Styling & UI  
+- **Tailwind CSS 3.4.17** – Utility-first styling  
+- **shadcn/ui** – Accessible, modern component library  
+- **Radix UI** – Headless UI primitives  
+- **Custom CSS Variables & Animations** – Dynamic themes and keyframe animations  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### State Management & Data Fetching  
+- **TanStack Query (React Query) 5.83.0** – Server state management  
+- **React Hook Form 7.61.1** – Form handling  
+- **Zod 3.25.76** – Schema validation  
 
-Follow these steps:
+### Routing & Navigation  
+- **React Router DOM 6.30.1** – Client-side routing  
+- **Custom Navigation Component** – Mobile-friendly menu  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open the project and click on Share -> Publish.
-
-## Can I connect a custom domain to my project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain]()
+### Icons & Assets  
+- **Lucide React 0.462.0** – Clean, modern icon set  
+- **React Icons 5.5.0** – Additional icons  
+- **Custom SVG Assets** – Personal branding visuals  
+---
