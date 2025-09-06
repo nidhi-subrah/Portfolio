@@ -2,7 +2,7 @@
 
 A modern personal portfolio built with **React, TypeScript, and Vite**, designed to showcase my projects, experience, and skills. The site emphasizes speed, accessibility, and clean design, powered by a cutting-edge frontend tech stack.  
 
-🔗 **Live Demo:** nidhisportfolio-chi.vercel.app
+🔗 **Live Demo:** [nidhisportfolio-chi.vercel.app](https://nidhisportfolio-chi.vercel.app)
 
 ---
 
