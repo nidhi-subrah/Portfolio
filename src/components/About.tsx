@@ -79,7 +79,7 @@ export const About = () => {
                 Hi! I'm Nidhi Subrahmanya, a Computer Engineering student at the University of Waterloo with a passion for building intelligent, data-driven systems. My journey so far has taken me from hardware foundations to developing scalable web applications and applying AI/ML to solve real-world problems through internships and projects.
               </p>
               <p>
-                I'm especially interested in the intersection of software engineering and AI, where I can create solutions that are both impactful and accessible. Outside of tech, I enjoy exploring music and creativity through video and audio editing for my YouTube channel.
+                I'm especially interested in the intersection of software engineering and AI, where I can create solutions that are both impactful and accessible. Outside of tech, I enjoy exploring music and creativity through video and audio editing for my YouTube channel, which has over 4.1K subscribers!
               </p>
             </div>
           </Card>
