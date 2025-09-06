@@ -9,7 +9,7 @@ const projects = [
     description: 'A conversational therapy platform providing real-time AI support with daily check-ins, personalized history and curated mental health resources.',
     technologies: ['React', 'Gemini API', 'MongoDB', 'Next.js'],
     image: '/images/TheraMind.png',
-    liveUrl: 'https://www.youtube.com/watch?v=cHi-_mFTqFc',
+    liveUrl: 'https://www.youtube.com/watch?v=VV4pqjJQuNw',
     githubUrl: 'https://github.com/nidhi-subrah/ai-therapist',
     featured: true
   },
