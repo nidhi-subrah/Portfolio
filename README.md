@@ -46,6 +46,3 @@ A modern personal portfolio built with **React, TypeScript, and Vite**, designed
 - **React Icons 5.5.0** – Additional icons  
 - **Custom SVG Assets** – Personal branding visuals  
 ---
-
-## 📂 Project Structure  
-
