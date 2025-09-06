@@ -21,7 +21,10 @@ const experiences = [
     company: 'Electrium Mobility',
     location: 'Waterloo, ON',
     period: 'Jan 2025 - Apr 2025',
-    description: <p>-Contributed to frontend development of the Electrium Mobility Shop with React, TypeScript, and Next.js, focusing on UI improvements and debugging.<br/>-Maintained a Supabase (PostgreSQL) backend, enhancing performance and implementing a product rating system.</p>,
+    description: <p>
+      -Contributed to frontend development of the Electrium Mobility Shop with React, TypeScript, and Next.js, focusing on UI improvements and debugging.<br/>
+      -Maintained a Supabase (PostgreSQL) backend, enhancing performance and implementing a product rating system. <br/>
+      -Collaborated with the engineering team on testing and troubleshooting, ensuring smoother feature rollouts and better overall system stability. </p>,
     technologies: ['React.js', 'PostgreSQL', 'Supabase', 'Next.js'],
     current: false
   }
