@@ -86,11 +86,11 @@ export const About = () => {
 
           {/* Photo - Full Right Side */}
           <Card className="p-8 tech-border hover:shadow-tech transition-all duration-300 bg-card/50 backdrop-blur-sm flex items-center justify-center">
-            <div className="w-full max-w-sm sm:max-w-md mx-auto aspect-[3/4] rounded-xl overflow-hidden">
+            <div className="w-full h-96 rounded-xl overflow-hidden">
               <img
-                src="/images/Personal Pic.png"
+                src="/Personal%20Pic.png"
                 alt="Nidhi Subrahmanya portrait"
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-[50%_35%]"
                 loading="eager"
                 decoding="async"
               />
